@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp"
+    android:background="@drawable/view_border_gray"
+    android:layout_marginVertical="10dp">
+
+
+    <TextView
+        android:id="@+id/txtFoodStoreStoreName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="10dp"
+        android:text="Quán: Quán Quỳnh Hoa Bão Táp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtFoodStoreFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFoodStoreStoreName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_toStartOf="@id/imgFoodStoreFoodImg"
+        android:text="Cơm chiên gà chiên mắm"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgFoodStoreFoodImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/popular1"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txtFoodStoreStoreName"
+        android:layout_marginHorizontal="10dp"/>
+
+    <TextView
+        android:id="@+id/txtFoodStorePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá: 40,000 VND"
+        android:layout_below="@+id/txtFoodStoreFoodName"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/imgFoodStoreFoodImg"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"/>
+
+</RelativeLayout>

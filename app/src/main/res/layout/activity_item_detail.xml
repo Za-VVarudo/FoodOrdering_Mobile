@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailActivity">
+
+    <ImageView
+        android:id="@+id/btnBackItemDetail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgItemDetail"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:layout_below="@id/btnBackItemDetail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/popular1" />
+
+    <LinearLayout
+        android:id="@+id/layoutItemInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgItemDetail"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/txtItemName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Cơm gà không có xối mỡ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txtItemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="40,000 VND"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtItemType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutItemInfo"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="20dp"
+        android:text="Loại: Cơm"
+        android:textSize="18sp"
+        android:layout_marginVertical="10dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutItemQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/txtItemType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgItemDetailMinus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/txtItemQuantity"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/minus_icon" />
+
+        <TextView
+            android:id="@+id/txtItemQuantity"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:id="@+id/imgItemDetailPlus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/txtItemQuantity"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/plus_icon" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnItemDetailUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:background="#CC6DF33C"
+        android:text="Cập nhật"
+        android:textAllCaps="false"
+        android:textSize="23dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
